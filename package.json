@@ -1,5 +1,5 @@
 {
-  "name": "accepts",
+  "name": "https-accepts",
   "description": "Higher-level content negotiation",
   "version": "2.0.0",
   "contributors": [
@@ -7,7 +7,7 @@
     "Jonathan Ong <me@jongleberry.com> (http://jongleberry.com)"
   ],
   "license": "MIT",
-  "repository": "jshttp/accepts",
+  "repository": "kylewilliams60/https-accepts",
   "funding": {
     "type": "opencollective",
     "url": "https://opencollective.com/express"

@@ -1,4 +1,4 @@
-# accepts
+# https-accepts
 
 [![NPM Version][npm-version-image]][npm-url]
 [![NPM Downloads][npm-downloads-image]][npm-url]
@@ -24,18 +24,18 @@ This is a [Node.js](https://nodejs.org/en/) module available through the
 [`npm install` command](https://docs.npmjs.com/getting-started/installing-npm-packages-locally):
 
 ```sh
-$ npm install accepts
+$ npm install https-accepts
 ```
 
 ## API
 
 ```js
-var accepts = require('accepts')
+var https-accepts = require('https-accepts')
 ```
 
-### accepts(req)
+### https-accepts(req)
 
-Create a new `Accepts` object for the given `req`.
+Create a new `https-accepts` object for the given `req`.
 
 #### .charset(charsets)
 
@@ -44,7 +44,7 @@ then `false` is returned.
 
 #### .charsets()
 
-Return the charsets that the request accepts, in the order of the client's
+Return the charsets that the request https-accepts, in the order of the client's
 preference (most preferred first).
 
 #### .encoding(encodings)
@@ -54,7 +54,7 @@ then `false` is returned.
 
 #### .encodings()
 
-Return the encodings that the request accepts, in the order of the client's
+Return the encodings that the request https-accepts, in the order of the client's
 preference (most preferred first).
 
 #### .language(languages)
@@ -64,7 +64,7 @@ then `false` is returned.
 
 #### .languages()
 
-Return the languages that the request accepts, in the order of the client's
+Return the languages that the request https-accepts, in the order of the client's
 preference (most preferred first).
 
 #### .type(types)
@@ -78,24 +78,24 @@ that is not a full MIME type is passed to `require('mime-types').lookup`.
 
 #### .types()
 
-Return the types that the request accepts, in the order of the client's
+Return the types that the request https-accepts, in the order of the client's
 preference (most preferred first).
 
 ## Examples
 
 ### Simple type negotiation
 
-This simple example shows how to use `accepts` to return a different typed
+This simple example shows how to use `https-accepts` to return a different typed
 respond body based on what the client wants to accept. The server lists it's
 preferences in order and will get back the best match between the client and
 server.
 
 ```js
-var accepts = require('accepts')
+var https-accepts = require('https-accepts')
 var http = require('http')
 
 function app (req, res) {
-  var accept = accepts(req)
+  var accept = https-accepts(req)
 
   // the order of this list is significant; should be server preferred order
   switch (accept.type(['json', 'html'])) {
@@ -121,6 +121,7 @@ http.createServer(app).listen(3000)
 ```
 
 You can test this out with the cURL program:
+
 ```sh
 curl -I -H'Accept: text/html' http://localhost:3000/
 ```
@@ -129,12 +130,12 @@ curl -I -H'Accept: text/html' http://localhost:3000/
 
 [MIT](LICENSE)
 
-[coveralls-image]: https://badgen.net/coveralls/c/github/jshttp/accepts/master
-[coveralls-url]: https://coveralls.io/r/jshttp/accepts?branch=master
-[github-actions-ci-image]: https://badgen.net/github/checks/jshttp/accepts/master?label=ci
-[github-actions-ci-url]: https://github.com/jshttp/accepts/actions/workflows/ci.yml
-[node-version-image]: https://badgen.net/npm/node/accepts
+[coveralls-image]: https://badgen.net/coveralls/c/github/jshttp/https-accepts/master
+[coveralls-url]: https://coveralls.io/r/jshttp/https-accepts?branch=master
+[github-actions-ci-image]: https://badgen.net/github/checks/jshttp/https-accepts/master?label=ci
+[github-actions-ci-url]: https://github.com/jshttp/https-accepts/actions/workflows/ci.yml
+[node-version-image]: https://badgen.net/npm/node/https-accepts
 [node-version-url]: https://nodejs.org/en/download
-[npm-downloads-image]: https://badgen.net/npm/dm/accepts
-[npm-url]: https://npmjs.org/package/accepts
-[npm-version-image]: https://badgen.net/npm/v/accepts
+[npm-downloads-image]: https://badgen.net/npm/dm/https-accepts
+[npm-url]: https://npmjs.org/package/https-accepts
+[npm-version-image]: https://badgen.net/npm/v/https-accepts
