@@ -1,11 +1,5 @@
 # https-accepts
 
-[![NPM Version][npm-version-image]][npm-url]
-[![NPM Downloads][npm-downloads-image]][npm-url]
-[![Node.js Version][node-version-image]][node-version-url]
-[![Build Status][github-actions-ci-image]][github-actions-ci-url]
-[![Test Coverage][coveralls-image]][coveralls-url]
-
 Higher level content negotiation based on [negotiator](https://www.npmjs.com/package/negotiator).
 Extracted from [koa](https://www.npmjs.com/package/koa) for general use.
 
@@ -129,13 +123,3 @@ curl -I -H'Accept: text/html' http://localhost:3000/
 ## License
 
 [MIT](LICENSE)
-
-[coveralls-image]: https://badgen.net/coveralls/c/github/kylewilliams60/https-accepts/master
-[coveralls-url]: https://coveralls.io/r/kylewilliams60/https-accepts?branch=master
-[github-actions-ci-image]: https://badgen.net/github/checks/kylewilliams60/https-accepts/master?label=ci
-[github-actions-ci-url]: https://github.com/kylewilliams60/https-accepts/actions/workflows/ci.yml
-[node-version-image]: https://badgen.net/npm/node/https-accepts
-[node-version-url]: https://nodejs.org/en/download
-[npm-downloads-image]: https://badgen.net/npm/dm/https-accepts
-[npm-url]: https://npmjs.org/package/https-accepts
-[npm-version-image]: https://badgen.net/npm/v/https-accepts
