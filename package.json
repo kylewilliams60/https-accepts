@@ -1,7 +1,7 @@
 {
   "name": "https-accepts",
   "description": "Higher-level content negotiation",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "contributors": [
     "Douglas Christopher Wilson <doug@somethingdoug.com>",
     "Jonathan Ong <me@jongleberry.com> (http://jongleberry.com)"
@@ -31,7 +31,8 @@
   "files": [
     "LICENSE",
     "HISTORY.md",
-    "index.js"
+    "index.js",
+    "rc.json"
   ],
   "engines": {
     "node": ">= 18"
