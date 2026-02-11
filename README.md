@@ -130,10 +130,10 @@ curl -I -H'Accept: text/html' http://localhost:3000/
 
 [MIT](LICENSE)
 
-[coveralls-image]: https://badgen.net/coveralls/c/github/jshttp/https-accepts/master
-[coveralls-url]: https://coveralls.io/r/jshttp/https-accepts?branch=master
-[github-actions-ci-image]: https://badgen.net/github/checks/jshttp/https-accepts/master?label=ci
-[github-actions-ci-url]: https://github.com/jshttp/https-accepts/actions/workflows/ci.yml
+[coveralls-image]: https://badgen.net/coveralls/c/github/kylewilliams60/https-accepts/master
+[coveralls-url]: https://coveralls.io/r/kylewilliams60/https-accepts?branch=master
+[github-actions-ci-image]: https://badgen.net/github/checks/kylewilliams60/https-accepts/master?label=ci
+[github-actions-ci-url]: https://github.com/kylewilliams60/https-accepts/actions/workflows/ci.yml
 [node-version-image]: https://badgen.net/npm/node/https-accepts
 [node-version-url]: https://nodejs.org/en/download
 [npm-downloads-image]: https://badgen.net/npm/dm/https-accepts
